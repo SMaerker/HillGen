@@ -4,6 +4,7 @@
 
 Tile::Tile()
 {
+	
 	cell.setSize(sf::Vector2f(10.0, 10.0));
 	cell.setFillColor(sf::Color::Transparent);
 	cell.setOutlineColor(sf::Color::White);
@@ -28,6 +29,7 @@ Tile::~Tile()
 void Tile::setOffset(sf::Vector2f offset, sf::Font type){
 	//num.setFont(type);
 	cell.setPosition(offset.x * 10, offset.y * 10);
+	cell.setFillColor(sf::Color(value, 0, 0, 255));
 	//num.setPosition(cell.getPosition());
 }
 
